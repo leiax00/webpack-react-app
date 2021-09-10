@@ -1,0 +1,25 @@
+env:
+  node: true
+  browser: true
+  es2021: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:react/recommended'
+parser: babel-eslint
+parserOptions:
+  sourceType: 'module'
+  allowImportExportEverywhere: true
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+plugins:
+  - react
+rules:
+  react/jsx-filename-extension:
+    - warn
+    - extensions:
+        - js
+        - jsx
+        - ts
+        - tsx
+  no-use-before-define: warn
