@@ -26,7 +26,7 @@ const baseConfig = {
       title: "Webpack React App"
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash:4].css'
+      filename: '[name].[chunkHash:4].css'
     }),
     new CleanWebpackPlugin()
   ],

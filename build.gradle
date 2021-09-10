@@ -1,0 +1,16 @@
+plugins {
+  id "com.github.node-gradle.node" version "3.1.0"
+}
+
+group 'cn.leiax00'
+version 'v1.0.0'
+
+task yarnBuild(type: YarnTask, dependsOn: yarn) {
+  group = 'node'
+  args = ['run', 'build']
+}
+
+task yarnDev(type: YarnTask, dependsOn: yarn) {
+  group = 'node'
+  args = ['run', 'dev']
+}
